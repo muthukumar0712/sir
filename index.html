@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teachers day</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="0.jpg" alt="" id="main-img">
+    <div id="image-gallery">
+        <div id="thumbnail-container">
+            <!--save the images in the folder named new folder and give the image name as 1.jpg....and so on-->
+            <img class="thumbnail" src="1.jpg">
+            <img class="thumbnail" src="2.jpg">
+            <img class="thumbnail" src="3.jpg">
+            <img class="thumbnail" src="4.jpg">
+            <img class="thumbnail" src="5.jpg">
+            <img class="thumbnail" src="6.jpg">
+            <img class="thumbnail" src="7.jpg">
+            <img class="thumbnail" src="8.jpg">
+            <img class="thumbnail" src="9.jpg">
+            <img class="thumbnail" src="10.jpg">
+            <img class="thumbnail" src="11.jpg">
+            <img class="thumbnail" src="12.jpg">
+            <img class="thumbnail" src="13.jpg">
+            <img class="thumbnail" src="14.jpg">
+            <img class="thumbnail" src="15.jpg">
+            <img class="thumbnail" src="17.jpg">
+            <img class="thumbnail" src="18.jpg">
+            <img class="thumbnail" src="19.jpg">
+            <img class="thumbnail" src="20.jpg">
+            <img class="thumbnail" src="21.jpg">
+            <img class="thumbnail" src="22.jpg">
+            <img class="thumbnail" src="23.jpg">
+            <img class="thumbnail" src="24.jpg">
+            <img class="thumbnail" src="25.jpg">
+        </div>
+    </div>
+    <a href="surprise.html" class="button">Click Here </a>
+    <script>
+        var thumbnail = document.querySelectorAll(".thumbnail");
+        var mainImage = document.querySelector("#main-img");
+
+        for(var i=0; i<thumbnail.length;i++){
+            thumbnail[i].addEventListener("click",function(){
+                mainImage.src = this.src;
+            })
+        }
+    </script>
+</body>
+</html>
